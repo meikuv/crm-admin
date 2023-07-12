@@ -1,0 +1,136 @@
+.auth-form {
+  position: relative;
+  width: 470px;
+  height: auto;
+  padding: 50px 40px;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 8%);
+
+  &__headline {
+    margin-bottom: 20px;
+  }
+
+  &__error {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 20px);
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65px;
+  height: 65px;
+  color: $redByKaspi;
+}
+
+.application-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 15px;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: normal;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.input-wrap {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 23px 15px 0;
+    font-size: 17px;
+    color: $quickSilver;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    pointer-events: none;
+  }
+
+  input {
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 23px 15px 0;
+    border: 1px solid $lightGrey;
+    font-size: 17px;
+    color: $brownGrey;
+    transition: border-color 0.2s ease;
+
+    &:focus + label,
+    &:valid + label {
+      font-size: 14px;
+      color: $quickSilver;
+      top: 15px;
+      left: 10px;
+      background: $white;
+      padding: 0 5px;
+    }
+  }
+
+  &:first-child {
+    input {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+
+  &:nth-child(2) {
+    input {
+      border-top: none;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.remember-me-label {
+  position: relative;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  color: $brownGrey;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  line-height: 52px;
+  margin-top: 40px;
+  font-size: 19px;
+  padding: 0;
+  justify-content: center;
+
+  &::v-deep(.p-button-label) {
+    flex: 0 1 auto;
+  }
+}
+
+.error-block {
+  margin-top: 19px;
+  font-size: 13px;
+  color: $redByKaspi;
+  text-align: justify;
+}

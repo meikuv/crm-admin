@@ -1,0 +1,102 @@
+.navigation {
+  flex: 0 1 auto;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+
+  li {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 0;
+    text-align: center;
+    flex: auto;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+      padding: 0 20px;
+      width: 100%;
+      font-size: 14px;
+
+      &:hover {
+        color: $raven;
+        transition: all 0.3s ease-out;
+      }
+
+      &.active {
+        background-color: $white;
+        color: $raven;
+      }
+
+      span {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 2.5;
+      }
+    }
+  }
+}
+
+.views {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  background-color: $white;
+  font-size: 14px;
+  list-style: none;
+  padding-inline-start: 0;
+
+  li {
+    position: relative;
+
+    + li {
+      margin-left: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      padding: 12px;
+
+      span {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        transition: color 0.25s ease-in;
+        color: $blue;
+      }
+
+      &.active {
+        color: $raven;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: $raven;
+        text-decoration: underline;
+        transition: color 0.3s ease-out;
+      }
+    }
+  }
+}

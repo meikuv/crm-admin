@@ -1,0 +1,4 @@
+include:
+  - project: 'dit/gitlab-ci'
+    ref: master
+    file: '/React-vue-gitlab-ci.yml'

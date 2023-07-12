@@ -1,0 +1,15 @@
+/* stylelint-disable at-rule-no-unknown */
+@import 'mixins';
+
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Thin', 200);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-ThinItalic', 200, italic);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Light', 300);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-LightItalic', 300, italic);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Regular', regular);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Italic', regular, italic);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Medium', 500);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-MediumItalic', 500, italic);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Bold', 600);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-BoldItalic', 600, italic);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-Black', 800);
+@include font-face('Roboto', '#{ $fonts-dir }/Roboto-BlackItalic', 800, italic);
